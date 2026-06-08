@@ -1,7 +1,7 @@
 CREATE TABLE projects (
                           id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
                           title VARCHAR(255) NOT NULL,
-                          type project_type NOT NULL DEFAULT 'ai_generated',
+                          type project_type NOT NULL DEFAULT 'AI_GENERATED',
                           description TEXT DEFAULT '',
                           source_text TEXT,
                           created_at TIMESTAMP NOT NULL DEFAULT now(),

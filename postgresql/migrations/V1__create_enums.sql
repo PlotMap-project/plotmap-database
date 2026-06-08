@@ -1,26 +1,26 @@
 CREATE TYPE event_status AS ENUM (
-    'planned',
-    'implemented',
-    'discarded'
+    'PLANNED',
+    'IMPLEMENTED',
+    'DISCARDED'
 );
 
 CREATE TYPE event_source AS ENUM (
-    'user_created',
-    'ai_generated',
-    'ai_updated'
+    'USER_CREATED',
+    'AI_GENERATED',
+    'AI_UPDATED'
 );
 
 CREATE TYPE event_system_role AS ENUM (
-    'inciting_incident',
-    'climax',
-    'rising_action',
-    'regular',
-    'resolution',
-    'plot_twist',
-    'falling_action'
+    'INCITING_INCIDENT',
+    'CLIMAX',
+    'RISING_ACTION',
+    'REGULAR',
+    'RESOLUTION',
+    'PLOT_TWIST',
+    'FALLING_ACTION'
 );
 
 CREATE TYPE project_type AS ENUM (
-    'user_created',
-    'ai_generated'
+    'USER_CREATED',
+    'AI_GENERATED'
 );
