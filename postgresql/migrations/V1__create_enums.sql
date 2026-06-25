@@ -6,8 +6,7 @@ CREATE TYPE event_status AS ENUM (
 
 CREATE TYPE event_source AS ENUM (
     'USER_CREATED',
-    'AI_GENERATED',
-    'AI_UPDATED'
+    'AI_GENERATED'
 );
 
 CREATE TYPE event_system_role AS ENUM (
@@ -21,6 +20,24 @@ CREATE TYPE event_system_role AS ENUM (
 );
 
 CREATE TYPE project_type AS ENUM (
-    'USER_CREATED',
+    'MANUAL',
     'AI_GENERATED'
+);
+
+CREATE TYPE connection_type AS ENUM (
+    'CAUSAL',
+    'TEMPORAL',
+    'PARALLEL'
+);
+
+CREATE TYPE generation_mode AS ENUM (
+    'INITIAL_GENERATION',
+    'APPEND_CHAPTER'
+);
+
+CREATE TYPE job_status AS ENUM (
+    'PENDING',
+    'PROCESSING',
+    'COMPLETED',
+    'FAILED'
 );
